@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RobotskaRuka)(type KiCad)(uri ${KIPRJMOD}/RobotskaRuka.pretty)(options "")(descr ""))
+)

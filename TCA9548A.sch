@@ -1,0 +1,265 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_Expansion:TCA9548APWR U4
+U 1 1 60F135DE
+P 5725 3250
+F 0 "U4" H 5475 4100 50  0000 C CNN
+F 1 "TCA9548APWR" H 6050 2300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 5725 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 5775 3500 50  0001 C CNN
+	1    5725 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR029
+U 1 1 60F14848
+P 5725 2350
+F 0 "#PWR029" H 5725 2200 50  0001 C CNN
+F 1 "+5V" H 5740 2523 50  0000 C CNN
+F 2 "" H 5725 2350 50  0001 C CNN
+F 3 "" H 5725 2350 50  0001 C CNN
+	1    5725 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 5325 2650 0    50   Input ~ 0
+AT_SDA
+Text GLabel 5325 2550 0    50   Input ~ 0
+AT_SCL
+$Comp
+L Device:R_Small R8
+U 1 1 60F1868F
+P 4875 2850
+F 0 "R8" H 4925 2850 50  0000 L CNN
+F 1 "10k" V 4875 2800 31  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4875 2850 50  0001 C CNN
+F 3 "~" H 4875 2850 50  0001 C CNN
+	1    4875 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 3050 5325 3050
+Wire Wire Line
+	4875 2950 4875 3050
+$Comp
+L power:+5V #PWR028
+U 1 1 60F196B1
+P 4875 2750
+F 0 "#PWR028" H 4875 2600 50  0001 C CNN
+F 1 "+5V" H 4890 2923 50  0000 C CNN
+F 2 "" H 4875 2750 50  0001 C CNN
+F 3 "" H 4875 2750 50  0001 C CNN
+	1    4875 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR026
+U 1 1 60F1A023
+P 3925 1600
+F 0 "#PWR026" H 3925 1450 50  0001 C CNN
+F 1 "+5V" H 3940 1773 50  0000 C CNN
+F 2 "" H 3925 1600 50  0001 C CNN
+F 3 "" H 3925 1600 50  0001 C CNN
+	1    3925 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 1650 2    50   Input ~ 0
+AT_SCL
+$Comp
+L Device:R_Small R6
+U 1 1 60F1BB0F
+P 4175 1650
+F 0 "R6" V 4250 1650 50  0000 C CNN
+F 1 "10k" V 4175 1650 31  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4175 1650 50  0001 C CNN
+F 3 "~" H 4175 1650 50  0001 C CNN
+	1    4175 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3925 1600 3925 1650
+Wire Wire Line
+	4275 1650 4350 1650
+Text GLabel 4350 2025 2    50   Input ~ 0
+AT_SDA
+$Comp
+L Device:R_Small R7
+U 1 1 60F1E8AD
+P 4175 2025
+F 0 "R7" V 4250 2025 50  0000 C CNN
+F 1 "10k" V 4175 2025 31  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4175 2025 50  0001 C CNN
+F 3 "~" H 4175 2025 50  0001 C CNN
+	1    4175 2025
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3925 2025 4075 2025
+Wire Wire Line
+	4275 2025 4350 2025
+Wire Wire Line
+	3925 1650 4075 1650
+Wire Wire Line
+	3925 2025 3925 1650
+Connection ~ 3925 1650
+$Comp
+L power:GND #PWR030
+U 1 1 60F20C32
+P 5725 4250
+F 0 "#PWR030" H 5725 4000 50  0001 C CNN
+F 1 "GND" H 5730 4077 50  0000 C CNN
+F 2 "" H 5725 4250 50  0001 C CNN
+F 3 "" H 5725 4250 50  0001 C CNN
+	1    5725 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60F23FA2
+P 6725 1900
+AR Path="/60F23FA2" Ref="C?"  Part="1" 
+AR Path="/60F7D485/60F23FA2" Ref="C?"  Part="1" 
+AR Path="/60F12F01/60F23FA2" Ref="C12"  Part="1" 
+F 0 "C12" H 6817 1946 50  0000 L CNN
+F 1 "10u" H 6817 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6725 1900 50  0001 C CNN
+F 3 "~" H 6725 1900 50  0001 C CNN
+	1    6725 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60F23FA8
+P 6725 1800
+AR Path="/60F23FA8" Ref="#PWR?"  Part="1" 
+AR Path="/60F7D485/60F23FA8" Ref="#PWR?"  Part="1" 
+AR Path="/60F12F01/60F23FA8" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 6725 1650 50  0001 C CNN
+F 1 "+5V" H 6740 1973 50  0000 C CNN
+F 2 "" H 6725 1800 50  0001 C CNN
+F 3 "" H 6725 1800 50  0001 C CNN
+	1    6725 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F23FAE
+P 6725 2000
+AR Path="/60F23FAE" Ref="#PWR?"  Part="1" 
+AR Path="/60F7D485/60F23FAE" Ref="#PWR?"  Part="1" 
+AR Path="/60F12F01/60F23FAE" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 6725 1750 50  0001 C CNN
+F 1 "GND" H 6730 1827 50  0000 C CNN
+F 2 "" H 6725 2000 50  0001 C CNN
+F 3 "" H 6725 2000 50  0001 C CNN
+	1    6725 2000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6125 2550
+NoConn ~ 6125 2650
+Text GLabel 6125 2950 2    50   Input ~ 0
+SCL2
+Text GLabel 6125 3050 2    50   Input ~ 0
+SDA2
+Text GLabel 6125 3150 2    50   Input ~ 0
+SCL3
+Text GLabel 6125 3350 2    50   Input ~ 0
+SCL4
+Text GLabel 6125 3550 2    50   Input ~ 0
+SCL5
+Text GLabel 6125 3750 2    50   Input ~ 0
+SCL6
+Text GLabel 6125 3950 2    50   Input ~ 0
+SCL7
+Text GLabel 6125 3250 2    50   Input ~ 0
+SDA3
+Text GLabel 6125 3450 2    50   Input ~ 0
+SDA4
+Text GLabel 6125 3650 2    50   Input ~ 0
+SDA5
+Text GLabel 6125 3850 2    50   Input ~ 0
+SDA6
+Text GLabel 6125 4050 2    50   Input ~ 0
+SDA7
+$Comp
+L Device:R_Small R9
+U 1 1 60F25983
+P 5025 3550
+F 0 "R9" V 5075 3425 50  0000 C CNN
+F 1 "10k" V 5025 3550 31  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5025 3550 50  0001 C CNN
+F 3 "~" H 5025 3550 50  0001 C CNN
+	1    5025 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5125 3550 5325 3550
+$Comp
+L Device:R_Small R10
+U 1 1 60F2664A
+P 5025 3650
+F 0 "R10" V 5075 3500 50  0000 C CNN
+F 1 "10k" V 5025 3650 31  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5025 3650 50  0001 C CNN
+F 3 "~" H 5025 3650 50  0001 C CNN
+	1    5025 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 60F26898
+P 5025 3750
+F 0 "R11" V 5075 3600 50  0000 C CNN
+F 1 "10k" V 5025 3750 31  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5025 3750 50  0001 C CNN
+F 3 "~" H 5025 3750 50  0001 C CNN
+	1    5025 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5125 3750 5325 3750
+Wire Wire Line
+	5325 3650 5125 3650
+$Comp
+L power:GND #PWR027
+U 1 1 60F27043
+P 4800 3800
+F 0 "#PWR027" H 4800 3550 50  0001 C CNN
+F 1 "GND" H 4805 3627 50  0000 C CNN
+F 2 "" H 4800 3800 50  0001 C CNN
+F 3 "" H 4800 3800 50  0001 C CNN
+	1    4800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3800 4800 3750
+Wire Wire Line
+	4800 3750 4925 3750
+Wire Wire Line
+	4925 3650 4800 3650
+Wire Wire Line
+	4800 3650 4800 3750
+Connection ~ 4800 3750
+Wire Wire Line
+	4925 3550 4800 3550
+Wire Wire Line
+	4800 3550 4800 3650
+Connection ~ 4800 3650
+Text GLabel 6125 2750 2    50   Input ~ 0
+SCL1
+Text GLabel 6125 2850 2    50   Input ~ 0
+SDA1
+$EndSCHEMATC
