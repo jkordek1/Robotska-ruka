@@ -9,7 +9,7 @@ Development stopped.
 
 ## Images
 
-![](Images/PCB-model.PNG)
+![](Images/robotska-ruka.png)
 
 ## Project folder structure
     .
