@@ -1,6 +1,6 @@
 # Robotska-ruka
 ## What is it?
-Board used for controlling multiple servo motors and current measurement of each motor.
+Board used for controlling multiple servo motors and their measurement of current.
 
 WiFI capability via ESP32.
 
